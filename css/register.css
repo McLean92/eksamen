@@ -1,0 +1,100 @@
+body {
+  background-color: #0B0A07; }
+
+.bknd-img {
+  height: 900px;
+  background-image: url("/flow4/eksamen/images/barkit.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.container {
+  margin-top: 50px;
+  height: 600px; }
+
+/* REGISTER PAGES START */
+.form_head {
+  height: 100px;
+  background-color: #320D6D;
+  box-shadow: 10px 15px 5px #061034; }
+
+.headline {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 35px;
+  font-family: "Roboto", "helvetica", sans-serif;
+  padding-top: 35px; }
+
+.form_body {
+  padding-top: 50px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 10px 15px 5px #061034; }
+
+.form_footer {
+  background-color: #320D6D;
+  height: 35px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-family: helvetica;
+  padding-top: 10px;
+  box-shadow: 10px 10px 5px #061034; }
+
+.form_footer a:hover {
+  color: #9b82fc; }
+
+a {
+  color: white; }
+
+input {
+  margin-top: 20px;
+  padding: 10px; }
+
+.submit {
+  margin-top: 50px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #320D6D;
+  color: white;
+  font-size: 15px;
+  font-family: helvetica;
+  cursor: pointer; }
+
+.submit:hover {
+  background-color: #9b82fc;
+  color: white; }
+
+.success {
+  padding-top: 20px;
+  font-family: helvetica;
+  color: green;
+  text-align: center; }
+
+.fail {
+  padding-top: 20px;
+  font-family: helvetica;
+  color: red;
+  text-align: center; }
+
+.signup {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  font-family: helvetica; }
+
+.signup a:hover {
+  color: #9b82fc; }
+
+/* REGISTER PAGES END */
+/* LOGIN PAGE START */
+.bknd-img2 {
+  height: 900px;
+  background-image: url("/flow4/eksamen/images/bottles.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+/* LOGIN PAGE END */
+
+/*# sourceMappingURL=register.css.map */

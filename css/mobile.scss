@@ -1,0 +1,88 @@
+/* styling button */
+$sidebarfarve: #0B0A07;
+$sidebarbarfarve: #0B0A07;
+$sidebarbarbarfarve: #0B0A07;
+
+$hover-color: #9b82fc;
+$active-color: #7654FC;
+$secondary-color: #0A369D;
+$tertiary-color: #320D6D;
+
+$nav-font: 'Roboto', 'helvetica', sans-serif;
+$primaryfont: 'Permanent Marker', cursive;
+$secondaryfont: 'Roboto', 'helvetica', sans-serif;
+
+.mobile {
+	display: none;
+	position: fixed; // mobile fikseres i toppen af filen
+	top: 0; // hvordan placeres mobile nav ift. sin position
+	width: 100%;  
+	div {
+		display: none; // mobilen 	vises ikke i stort format
+		
+	}
+	
+}
+.mobile button {
+	position: absolute; /* hopper op i toppen og fikserer sig */
+	top: 20px; /* hvordan placeres den ift. sin position */
+	right: 20px; /* hvordan placeres den ift. sin position */
+	height: 30px;
+	width: 30px; 
+	background-color: #000000; 
+	border: 0px solid #ddd;
+	border-radius: 3px; 
+	background: url("../icons/hamburger.svg") center no-repeat; /* css shortcode */
+	background-size: 100% 100%;
+	cursor: pointer; 
+	transition: 400ms ease; /* ikonet roterer samtidig med at menuen udfoldes */
+	&:hover {
+		background: url("../icons/hamburgerHover.svg") center no-repeat; /* css shortcode */
+	}
+} 
+
+
+
+
+
+
+.mobile button.expanded { /* button er her blevet tildelt en klasse "expanded", som forbinder html.fil + js.filen. */
+	transform: rotate(90deg); /* burgeren roterer 90 grader */
+}
+
+
+.mobile a {
+	font-family: $nav-font;
+	display: block; /* i mobil format ligger a tags sig i burgermenuen oveni hinanden */
+	padding: 20px 0px 20px 0px;
+	text-align: center;
+	background-color: #000000;
+	color: white; 
+	text-decoration: none;
+	&:hover {
+		color: white; 
+		background-color: $hover-color;
+		
+		
+	}
+}
+
+// vis mobil menu, skjul desktop 
+@media (max-width: 650px) {
+
+	.mobile {
+		display: block; // mobile synliggoeres 
+	}
+	.desktop, .sidebar_bar, .sidebar_bar_bar, .content {
+		display: none; // desktop goeres usynlig 
+	}
+
+
+.footer {
+	text-align: center;
+}
+
+
+
+
+}

@@ -1,0 +1,60 @@
+/* styling button */
+.mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  .mobile div {
+    display: none; }
+
+.mobile button {
+  position: absolute;
+  /* hopper op i toppen og fikserer sig */
+  top: 20px;
+  /* hvordan placeres den ift. sin position */
+  right: 20px;
+  /* hvordan placeres den ift. sin position */
+  height: 30px;
+  width: 30px;
+  background-color: #000000;
+  border: 0px solid #ddd;
+  border-radius: 3px;
+  background: url("../icons/hamburger.svg") center no-repeat;
+  /* css shortcode */
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition: 400ms ease;
+  /* ikonet roterer samtidig med at menuen udfoldes */ }
+  .mobile button:hover {
+    background: url("../icons/hamburgerHover.svg") center no-repeat;
+    /* css shortcode */ }
+
+.mobile button.expanded {
+  /* button er her blevet tildelt en klasse "expanded", som forbinder html.fil + js.filen. */
+  transform: rotate(90deg);
+  /* burgeren roterer 90 grader */ }
+
+.mobile a {
+  font-family: "Roboto", "helvetica", sans-serif;
+  display: block;
+  /* i mobil format ligger a tags sig i burgermenuen oveni hinanden */
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  text-decoration: none; }
+  .mobile a:hover {
+    color: white;
+    background-color: #9b82fc; }
+
+@media (max-width: 650px) {
+  .mobile {
+    display: block; }
+
+  .desktop, .sidebar_bar, .sidebar_bar_bar, .content {
+    display: none; }
+
+  .footer {
+    text-align: center; } }
+
+/*# sourceMappingURL=mobile.css.map */

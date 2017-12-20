@@ -1,0 +1,252 @@
+$maincolor: #0B0A07;
+$bknd-color: #f1faee; 
+$hover-color: #9b82fc;
+$active-color: #7654FC;
+$secondary-color: #0A369D;
+$tertiary-color: #320D6D;
+
+$nav-font: 'Roboto', 'helvetica', sans-serif;
+$primaryfont: 'Permanent Marker', cursive;
+$secondaryfont: 'Roboto', 'helvetica', sans-serif;
+
+body {
+	background-color: $tertiary-color;
+}
+
+.header {
+	background-color: $maincolor; 
+	height: 100px;
+	width: 100%;
+}
+
+.nav {
+	padding: 55px 0px 0px 0px;
+	.upload {
+		font-family: $nav-font;
+		font-size: 0.8em;
+		text-align: center;
+		color: white;
+		background-color: $active-color;
+		padding: 8px 5px;
+		margin: 0px 5px;
+		width: 100px;
+		border: none;
+		border-radius: none;
+		&:hover {
+			background-color: $hover-color;
+		}
+	}
+}
+
+.admin-photo {
+	position: absolute; 
+	left: 0;
+	margin-top: 40px;
+	margin-left: 280px;
+	img {
+		height: auto;
+		width: 12vw;
+	}
+}
+
+
+.content {
+	background-color: white;
+	height: 900px;
+}
+
+
+.h1 {
+	margin-top: 80px;
+	height: 80px;
+	font-family: $secondaryfont; 
+	font-size: 2em;
+
+}
+
+.section {
+	height: 80px;
+	background-color: $bknd-color; 
+	padding-top: 25px;
+	#btn, .submit {
+		background-color: $active-color;
+		color: white;
+		padding: 10px;
+		margin: 0px 5px;
+		border: none;
+		&:hover {
+			background-color: $hover-color;
+		}
+	}
+}
+
+.section2 {
+	padding: 50px;
+	font-family: $secondaryfont;
+
+	table {
+    border-collapse: collapse;
+	}
+
+	th {
+		background-color: $bknd-color;
+		padding: 10px;
+    	text-align: left;
+    	font-weight: bold;
+	}
+
+	td{
+		font-size: 0.8em;
+		padding: 10px;
+		text-align: left;
+	}
+	.section2h{
+		font-size: 1.5em;
+		margin-bottom: 40px;
+	}
+}
+.updateform {
+
+	input {
+		padding: 10px 5px;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	p {
+		font-family: $secondaryfont;
+	}
+}
+
+.box {
+	height: 800px;
+}
+.message {
+	color: green;
+	height: 50px;
+	bottom: 0;
+}
+
+/* Footer start */
+.footer {
+  p {font-family: $secondaryfont;
+    line-height: 150%;
+
+  }
+	opacity: 0;
+  	height: 0px;
+ 	background-color: $maincolor;
+  	transition-duration: 0.400s;
+  	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	text-align: right;
+	color: white;
+}
+
+.footer:hover {
+    height: 80px;
+    opacity: 0.8;
+}
+/* Footer end */
+
+
+
+
+/* The modal-box start */
+/* Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close, .close2 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: $hover-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+    color: $hover-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Modal Header */
+.modal-header {
+    padding: 5px 16px;
+    background-color: $tertiary-color;
+    color: white;
+    height: 50px;
+    h2 {
+    	padding-top: 10px;
+    	text-align: center;
+    }
+}
+
+/* Modal Body */
+.modal-body {
+	padding: 2px 16px;
+	height: 350px;
+	form {
+		margin-top: 30px;
+		margin-left: 60px;
+	}
+	.input {
+		margin: 3px 5px;
+		height: 30px;
+		padding: 5px;
+	}
+	.ctextbox {
+		margin: 5px;
+		padding: 10px;
+		max-height: 80px;
+		max-width: 410px;
+	}
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: $tertiary-color;
+    color: white;
+    height: 20px;
+}
+
+/* Modal Content */
+.modal-content {
+	font-family: $secondaryfont;
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 0;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+/* The modal-box end */

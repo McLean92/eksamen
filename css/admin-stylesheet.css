@@ -1,0 +1,209 @@
+body {
+  background-color: #320D6D; }
+
+.header {
+  background-color: #0B0A07;
+  height: 100px;
+  width: 100%; }
+
+.nav {
+  padding: 55px 0px 0px 0px; }
+  .nav .upload {
+    font-family: "Roboto", "helvetica", sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+    background-color: #7654FC;
+    padding: 8px 5px;
+    margin: 0px 5px;
+    width: 100px;
+    border: none;
+    border-radius: none; }
+    .nav .upload:hover {
+      background-color: #9b82fc; }
+
+.admin-photo {
+  position: absolute;
+  left: 0;
+  margin-top: 40px;
+  margin-left: 280px; }
+  .admin-photo img {
+    height: auto;
+    width: 12vw; }
+
+.content {
+  background-color: white;
+  height: 900px; }
+
+.h1 {
+  margin-top: 80px;
+  height: 80px;
+  font-family: "Roboto", "helvetica", sans-serif;
+  font-size: 2em; }
+
+.section {
+  height: 80px;
+  background-color: #f1faee;
+  padding-top: 25px; }
+  .section #btn, .section .submit {
+    background-color: #7654FC;
+    color: white;
+    padding: 10px;
+    margin: 0px 5px;
+    border: none; }
+    .section #btn:hover, .section .submit:hover {
+      background-color: #9b82fc; }
+
+.section2 {
+  padding: 50px;
+  font-family: "Roboto", "helvetica", sans-serif; }
+  .section2 table {
+    border-collapse: collapse; }
+  .section2 th {
+    background-color: #f1faee;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold; }
+  .section2 td {
+    font-size: 0.8em;
+    padding: 10px;
+    text-align: left; }
+  .section2 .section2h {
+    font-size: 1.5em;
+    margin-bottom: 40px; }
+
+.updateform input {
+  padding: 10px 5px;
+  width: 50%;
+  margin-bottom: 20px; }
+.updateform p {
+  font-family: "Roboto", "helvetica", sans-serif; }
+
+.box {
+  height: 800px; }
+
+.message {
+  color: green;
+  height: 50px;
+  bottom: 0; }
+
+/* Footer start */
+.footer {
+  opacity: 0;
+  height: 0px;
+  background-color: #0B0A07;
+  transition-duration: 0.400s;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: right;
+  color: white; }
+  .footer p {
+    font-family: "Roboto", "helvetica", sans-serif;
+    line-height: 150%; }
+
+.footer:hover {
+  height: 80px;
+  opacity: 0.8; }
+
+/* Footer end */
+/* The modal-box start */
+/* Background */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/ opacity */ }
+
+/* The Close Button */
+.close, .close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #9b82fc;
+  text-decoration: none;
+  cursor: pointer; }
+
+.close2:hover,
+.close2:focus {
+  color: #9b82fc;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* Modal Header */
+.modal-header {
+  padding: 5px 16px;
+  background-color: #320D6D;
+  color: white;
+  height: 50px; }
+  .modal-header h2 {
+    padding-top: 10px;
+    text-align: center; }
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+  height: 350px; }
+  .modal-body form {
+    margin-top: 30px;
+    margin-left: 60px; }
+  .modal-body .input {
+    margin: 3px 5px;
+    height: 30px;
+    padding: 5px; }
+  .modal-body .ctextbox {
+    margin: 5px;
+    padding: 10px;
+    max-height: 80px;
+    max-width: 410px; }
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #320D6D;
+  color: white;
+  height: 20px; }
+
+/* Modal Content */
+.modal-content {
+  font-family: "Roboto", "helvetica", sans-serif;
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 0;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s; }
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+/* The modal-box end */
+
+/*# sourceMappingURL=admin-stylesheet.css.map */

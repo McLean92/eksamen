@@ -1,0 +1,306 @@
+body {
+  background-color: black; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2em;
+  font-weight: 200; }
+
+.h2 {
+  font-family: "Roboto", "helvetica", sans-serif;
+  font-size: 1.5em; }
+
+.h3 {
+  font-family: "Roboto", "helvetica", sans-serif;
+  font-size: 0.9em; }
+
+#logo:hover {
+  cursor: pointer;
+  opacity: 0.9; }
+
+.sidebar_menu {
+  background: black;
+  position: fixed;
+  width: 20vw;
+  z-index: 3;
+  height: 100vh;
+  padding: 30px;
+  border-right: 1px solid white; }
+  .sidebar_menu--indhold {
+    padding-top: 50px; }
+    .sidebar_menu--indhold a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-family: "Roboto", "helvetica", sans-serif; }
+    .sidebar_menu--indhold li {
+      padding: 15px; }
+      .sidebar_menu--indhold li:hover {
+        background-color: #9b82fc;
+        cursor: pointer; }
+
+.active {
+  outline: #7654FC 1.5px solid;
+  color: #fff;
+  padding: 10px; }
+
+.sidebar_bar {
+  background: #0B0A07;
+  position: fixed;
+  width: 45vw;
+  z-index: 2;
+  height: 100vh;
+  transform: translateX(-40vw);
+  transition: all .3s ease-in-out;
+  border-right: 1px solid white;
+  word-wrap: break-word; }
+  .sidebar_bar .closebar, .sidebar_bar .closebar_bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    font-size: 30px; }
+    .sidebar_bar .closebar:hover, .sidebar_bar .closebar_bar:hover {
+      background-color: #9b82fc;
+      cursor: pointer; }
+  .sidebar_bar--indhold {
+    margin-left: 20vw;
+    color: white;
+    word-wrap: break-word;
+    padding: 80px 30px 30px 30px; }
+
+#cmenu_menu {
+  background: #0B0A07;
+  position: fixed;
+  width: 30vw;
+  z-index: 2;
+  height: 100vh;
+  transform: translateX(-40vw);
+  transition: all .3s ease-in-out;
+  border-right: 1px solid white; }
+  #cmenu_menu--indhold {
+    margin-left: 20vw;
+    color: white; }
+
+.cocktail_container {
+  z-index: 1;
+  background-color: black;
+  opacity: 1; }
+
+.cocktail {
+  height: 100px;
+  width: 100%; }
+
+.sidebar_bar_bar {
+  background: #0B0A07;
+  position: fixed;
+  z-index: 1;
+  margin-left: 45vw;
+  width: 20vw;
+  height: 100vh;
+  transform: translateX(-60vw);
+  transition: all .3s ease-in-out; }
+  .sidebar_bar_bar--indhold {
+    color: white;
+    padding: 80px 30px 30px 30px; }
+    .sidebar_bar_bar--indhold a {
+      font-family: "Roboto", "helvetica", sans-serif;
+      line-height: 160%;
+      letter-spacing: 1.5px; }
+    .sidebar_bar_bar--indhold ul {
+      padding-top: 90px; }
+
+.content {
+  background: url(images/img.jpg) no-repeat fixed;
+  background-size: 100% 100%;
+  height: 100vh;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  object-fit: contain; }
+
+.video-container {
+  margin-left: 100px;
+  height: 100vh;
+  width: 100%; }
+  .video-container video {
+    height: 100%;
+    width: 100%; }
+
+/* Contact content start */
+.contactText {
+  margin: 10px 0px 20px 0px; }
+
+.cinput {
+  font-family: "Roboto", "helvetica", sans-serif;
+  padding: 10px;
+  margin: 10px 0px; }
+
+.ctextbox {
+  font-family: "Roboto", "helvetica", sans-serif;
+  margin: 10px 0px; }
+
+/* Contact content end */
+/* Menu content start */
+.icons {
+  height: auto;
+  width: 70%;
+  margin-top: 25px;
+  text-align: center;
+  margin-left: 10%; }
+  .icons #all {
+    font-size: 1.2em; }
+  .icons img {
+    width: 40px;
+    height: 60px; }
+  .icons #rock {
+    width: 40px;
+    height: 45px; }
+  .icons:hover {
+    background-color: #9b82fc;
+    color: white;
+    cursor: pointer; }
+  .icons p {
+    font-family: "Permanent Marker", cursive;
+    font-size: 0.8em;
+    padding-top: 8px; }
+
+.rocks, .martinis, .highballs, .tikis, .wines, .beers {
+  display: none; }
+
+.cocktail .drink {
+  margin: 100px 60px 0px 60px;
+  width: 20%; }
+
+/* Menu content end */
+/* Reservation content start */
+#chairNtable {
+  max-height: 150px;
+  width: 70%;
+  margin-bottom: 20px; }
+
+#resPeople {
+  height: 40px; }
+
+/* Reservation content end */
+/* About content start */
+#joecathy {
+  max-height: 150px;
+  width: 55%;
+  margin-top: 30px; }
+
+#about p {
+  margin-top: 30px;
+  line-height: 180%;
+  letter-spacing: 1.5px; }
+#about a {
+  font-family: "Roboto", "helvetica", sans-serif; }
+
+/* About content end */
+/* Events content start */
+#champagneBottle {
+  max-height: 80px;
+  width: 55%;
+  margin-bottom: 150px; }
+
+#events a {
+  font-family: "Roboto", "helvetica", sans-serif;
+  margin: 10px 0px; }
+
+.eventsText {
+  margin-top: 30px;
+  line-height: 180%;
+  letter-spacing: 2px; }
+
+/* Events content end */
+/* Apply content start */
+#bartenderKit {
+  max-height: 150px;
+  width: 70%;
+  padding-bottom: 200px;
+  margin-top: 20px;
+  margin-bottom: 50px; }
+
+.applyForm {
+  margin-top: 20px; }
+
+/* Apply content end */
+.submit {
+  font-family: "Roboto", "helvetica", sans-serif;
+  font-size: 1.1em;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #7654FC;
+  border: none;
+  border-radius: none;
+  cursor: pointer; }
+  .submit:hover {
+    background-color: #9b82fc; }
+
+/* Social media START */
+.SoMe {
+  margin-top: 120px;
+  z-index: 1; }
+
+.fb {
+  width: 40px;
+  height: 40px;
+  background: url(../icons/fb.png) no-repeat;
+  background-size: 100% 100%; }
+
+.fb:hover {
+  width: 40px;
+  height: 40px;
+  background: url(../icons/fbHover.png) no-repeat;
+  /* Hover effect - "Image-switch" */
+  cursor: pointer;
+  /* showing a hand on-mouse-over */
+  background-size: 100% 100%; }
+
+.insta {
+  width: 40px;
+  height: 40px;
+  background: url(../icons/instagram.png) no-repeat;
+  background-size: 100% 100%; }
+
+.insta:hover {
+  width: 40px;
+  height: 40px;
+  background: url(../icons/instagramHover.png) no-repeat;
+  /* Hover effect - "Image-switch" */
+  cursor: pointer;
+  /* showing a hand on-mouse-over */
+  background-size: 100% 100%; }
+
+/* Social media END */
+/* Footer start */
+.footer {
+  opacity: 0;
+  height: 0px;
+  background-color: black;
+  transition-duration: 0.400s;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: right;
+  color: white; }
+  .footer p {
+    font-family: "Roboto", "helvetica", sans-serif;
+    line-height: 150%; }
+
+.footer:hover {
+  height: 80px;
+  opacity: 0.8; }
+
+/* Footer end */
+
+/*# sourceMappingURL=base.css.map */
